@@ -60,11 +60,11 @@ Read the Readme at least 3 times; after each reading discuss what you understood
 
 You will be connecting to a real-time weather API to make a weather app that looks like this:
 
-![final design](images/instructions/final-design.png![Uploading final-design.png…]()
-)
+<img width="1087" alt="final-design" src="https://user-images.githubusercontent.com/101974539/208298479-97fc3faa-9ac4-4da5-adaa-33c6de2cbeff.png">
 
-![designgif](images/instructions/weatherappdemo.g![Uploading weatherappdemo.gif…]()
-if)
+![Uploading weatherappdemo.gif…]()
+
+
 
 ### 1. Getting started: Static HTML and CSS <kbd>🔑x30</kbd>
 
@@ -111,9 +111,9 @@ This is about cutting up your one big single block of HTML and putting sections 
 
 You'll need several components - you can decide how much you want to break things up into different components, but at minimum you will need a `<Search />` component, and a `<CurrentWeather />` component (you can choose the naming you like).
 
-![wireframe](images/instructions/wireframe.png file:///home/mahmoud/Downloads/wireframe.png
+<img width="426" alt="wireframe" src="https://user-images.githubusercontent.com/101974539/208298503-058bfb09-ec85-45ed-be2d-935c937eb8ca.png">
 
-)
+
 
 If you find yourself copy-pasting an html section multiple times with small changes, you've probably found a good candidate for a reusable React component.
 
@@ -272,7 +272,8 @@ What should happen if the network is down, or if someone searches for a city whi
 
 Add a new section to your app that will display the weather over the next 24 hours in the given location.
 
-![final design](images/instructions/final-design.png)
+<img width="1087" alt="final-design" src="https://user-images.githubusercontent.com/101974539/208298527-2d4b84a1-af02-4a03-b678-fc81aaf2ed44.png">
+
 
 **Think about how you can manipulate the data to display the weather for each 3-hour chunk...**
 
