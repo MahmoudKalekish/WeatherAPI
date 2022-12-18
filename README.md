@@ -60,9 +60,11 @@ Read the Readme at least 3 times; after each reading discuss what you understood
 
 You will be connecting to a real-time weather API to make a weather app that looks like this:
 
-![final design](images/instructions/final-design.png)
+![final design](images/instructions/final-design.png![Uploading final-design.png…]()
+)
 
-![designgif](images/instructions/weatherappdemo.gif)
+![designgif](images/instructions/weatherappdemo.g![Uploading weatherappdemo.gif…]()
+if)
 
 ### 1. Getting started: Static HTML and CSS <kbd>🔑x30</kbd>
 
@@ -109,7 +111,9 @@ This is about cutting up your one big single block of HTML and putting sections 
 
 You'll need several components - you can decide how much you want to break things up into different components, but at minimum you will need a `<Search />` component, and a `<CurrentWeather />` component (you can choose the naming you like).
 
-![wireframe](images/instructions/wireframe.png)
+![wireframe](images/instructions/wireframe.png file:///home/mahmoud/Downloads/wireframe.png
+
+)
 
 If you find yourself copy-pasting an html section multiple times with small changes, you've probably found a good candidate for a reusable React component.
 
@@ -186,6 +190,7 @@ The data will come in JSON format, and will look like this: https://samples.open
 **1)** Register to get your personal API key. This is free, and will enable you to make (limited) requests to fetch the weather data you need. Follow the steps here: https://openweathermap.org/appid
 
 **2)** Once logged in, go to the API keys tab and copy the default Key. Keep this somewhere safe as you will need it when you fetch data.
+<img width="1033" alt="api-key" src="https://user-images.githubusercontent.com/101974539/208298438-969e1a9f-6de2-453b-a641-d96e7d190af7.png">
 
 ![api key](images/instructions/api-key.png)
 
