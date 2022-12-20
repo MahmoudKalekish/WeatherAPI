@@ -1,0 +1,155 @@
+.app {
+  height: 100vh;
+  margin:auto;
+  font-family: 'Raleway', sans-serif;
+  background-color: #9CCEF4;
+}
+
+header {
+  background-color: #759EDA;
+  padding: 1pc;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border: none;
+  font-size: 1.3pc;
+  background-color: #759EDA;
+  color: white;
+  padding-bottom: 0.7pc;
+  width: 15pc;
+}
+
+input:focus {
+  outline: none;
+  padding-bottom: 0.7pc;
+  border-bottom: 1px solid rgba(0,0,200,0.7);
+}
+
+button {
+  padding: 1pc;
+  margin-left: 1.5pc;
+  background-color: #5879C7;
+  border: none;
+  border-radius: 2px;
+  font-size: 1.1pc;
+  font-weight: 300;
+}
+
+main > figure {
+  margin-bottom: 0;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figcaption {
+  font-weight: 900;
+  font-size: 1.3pc;
+  color: white;
+  margin: 1pc;
+}
+
+.weatherDetails > p {
+  text-align: center;
+  font-size: 1.3pc;
+  margin-top: 1pc;  
+}
+
+.moreDetails {
+  display: flex;
+  justify-content: center;
+}
+
+.moreDetails > p {
+  margin: 0.9pc;
+  font-size: 0.8pc;
+  
+}
+
+.label {
+  font-weight: bold;
+}
+
+.hourlyWeather{ 
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #9CCEF4;
+  text-align: center;
+  justify-content: center;
+  margin: 1pc;
+  margin-top: 2pc;
+}
+
+  .hourlyWeather > section {
+    margin-top: 1pc;
+  }
+
+.hourlyWeather figure {
+  margin: 2pc 1.5pc;
+}
+
+@media screen and (max-width: 900px) {
+
+  .hourlyWeather > section {
+    margin-top: 2pc;
+  }
+
+  .hourlyWeather figure {
+    margin: 1.3pc;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    height: 8pc;
+    
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  form input {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  form button {
+    margin: auto;
+  }
+
+  .hourlyWeather > section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 100, 0.5);
+    margin: 1.5pc;
+    margin-bottom: 0;
+    
+  }
+
+  .hourlyWeather > section:not(:nth-child(1)) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .hourlyWeather > section:last-child {
+    border: none;
+  }
+  
+  .hourlyWeather figure {
+    margin: 1pc;
+  }
+
+}

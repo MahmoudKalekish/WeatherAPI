@@ -1,0 +1,93 @@
+.Navbar{
+    background-color:#759eda;
+    width:100%;
+    height:120px;
+    margin:0;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .Navbar,.search-input {
+    color: white;
+    font-size: 27px;
+    width: 100%;
+  }
+  .Navbar button {
+    width:200px;
+    height:65px;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 25px;
+    background-color: #5879c7;
+    color:#05054b;
+    border:#5879c7;
+  }
+  .search-input input {
+    margin-top: 30px;
+    background-color: #759eda;
+    margin-left: 20px;
+    outline: none;
+    padding: 5px 0;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    font-size: 28px;
+    color: white;
+}
+
+  @media screen and (max-width:1422px){
+    .Navbar{
+    justify-content: space-between;
+    width:100%;
+    }
+    .Navbar button{
+      margin-left: -20px;
+      margin-right:50px;
+    }
+  }
+  @media screen and (max-width:500px) {
+    .Navbar{
+        
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1px;
+
+    }
+    .button {
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+  }
+  /* .search-input{
+    margin-top: 0px;
+    margin-left: 0px;
+    background-color: #759eda;
+    outline:none;
+    padding: 0px 0 0 0;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    font-size: 27px;
+    color: white;
+  } */
+  .search-input input {
+    margin-top: 30px;
+    background-color: #759eda;
+    margin-left: 20px;
+    outline: none;
+    padding: 5px 0;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    font-size: 28px;
+    color: white;
+}
+  .Navbar button {
+    margin-left: 0px;
+    margin-right: 50px;
+    border-radius: 50px;
+  }
+  }
