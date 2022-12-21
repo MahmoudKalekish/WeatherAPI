@@ -1,28 +1,40 @@
-import React from 'react'
-import './Body.css'
-import mostlycloudy from '../weather-icons/mostlycloudy.svg'
-function CurrentWeather() {
-  return (
-    <div>
-        <div className='mainImage'>
-        <img src={mostlycloudy} alt='mostly cloudy icon'/>
-        
-      </div>
+import React from 'react';
+// import clear from "../img/weather-icons/clear.svg";
+// import cloudy from "../img/weather-icons/cloudy.svg";
+// import drizzle from "../img/weather-icons/drizzle.svg";
+// import fog from "../img/weather-icons/fog.svg";
+// import mostlycloudy from "../img/weather-icons/mostlycloudy.svg";
+// import partlycloudy from "../img/weather-icons/partlycloudy.svg";
+// import rain from "../img/weather-icons/rain.svg";
+// import snow from "../img/weather-icons/snow.svg";
+// import storm from "../img/weather-icons/storm.svg";
+// import unknown from "../img/weather-icons/unknown.svg";
 
-      <div className='imgDiscription'>
-        <p>overcast clouds</p>
-      </div>
+const CurrentWeather = (props) => {
 
-      <div className='temperature'>
-        <p><span className='temp'>Temperature</span> 10° to 11°C</p>
-      </div>
+return (
+    <>
+    <main>
+  <figure>
+    <img src={props.mainIcon} width="200" alt="icon"></img>
+    <figcaption><strong>{props.currentWeatherDesc}</strong></figcaption>
+  </figure>
+  <section className="weatherDetails">
+    <p>
+        <span className="label">Temperature </span>  
+        <span className="tempValue">
+            {props.tempMin}&#176; to {props.tempMax}&#8451;
+        </span>
+    </p>
 
-      <div className='hum-pre'>
-        <p><span className='hp'>Humidity</span> &nbsp;&nbsp; 78% &nbsp;&nbsp; <span className='hp'>Pressure </span>&nbsp;&nbsp; 1008.48</p>
-      </div>
-
-    </div>
-  )
+    <section className="moreDetails">
+      <p><span className="label">Humidity </span><span className="humidityValue">{props.humidity}%</span></p>
+      <p><span className="label">Pressure </span><span className="pressureValue">{props.pressure}</span></p>
+    </section>
+  </section>
+</main>
+    </>
+)
 }
 
-export default CurrentWeather
+export default CurrentWeather;

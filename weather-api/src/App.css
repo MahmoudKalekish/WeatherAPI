@@ -4,6 +4,10 @@
   font-family: 'Raleway', sans-serif;
   background-color: #9CCEF4;
 }
+::placeholder {
+  color: rgb(214, 209, 209);
+  opacity: 1;
+}
 
 header {
   background-color: #759EDA;
@@ -126,6 +130,7 @@ figcaption {
 
   form button {
     margin: auto;
+    border-radius: 15px;
   }
 
   .hourlyWeather > section {
